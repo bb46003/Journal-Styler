@@ -1,0 +1,61 @@
+{
+  "JT": {
+    "THEME": {
+      "label": "Wähle dein Journal-Design aus",
+      "default": "Systemstandard",
+      "emeraldcity": "Emerald City",
+      "freedomcity": "Freedom City",
+      "techblue": "Tech Blue",
+      "techblue2": "Tech Blue 2",
+      "bloodred": "Blood Red",
+      "bloodred2": "Blood Red 2",
+      "gothblack": "Goth Black",
+      "cosmicblue": "Cosmic Blue",
+      "starburst": "Star Burst",
+      "matrixblack": "Matrix Black",
+      "defaultFont": "Default Font",
+      "journalTheme": "Journal Theme",
+      "journalHeaderFont": "Schriftart Kopfzeile",
+      "journalBodyFont": "Schriftart Textkörper"
+    },
+    "JOURNAL": {
+      "ThemeTooltip": "Klick hier, um die Design- und Schriftart-Auswahl zu öffnen",
+      "title": "Designauswahl",
+      "SelectYourTheme": "Wähle ein Journal-Design, eine Schriftart für die Kopfzeile und eine Schriftart für den Textkörper aus."
+    },
+    "APPLY": "Anwenden",
+    "SETTING": {
+      "MinOwnership": "Stelle hier ein, wer sein eigenes Design festlegen können darf.",
+      "MinOwnershipHint": "Öffnet jemand ein Journal, sieht er oben in der Kopfzeile einen zusätzlichen Button, mit dem er sein eigenes Design und seine eigenen Schriftarten einstellen kann. Das gilt dann nur für diese Person.",
+      "googleFonts": "[Google Fonts]",
+      "localFonts": "[Lokale Fonts]",
+      "fontUrlPlaceholder": "z.B. Roboto",
+      "localfontNamePlaceholder": "z.B. MeinLokalerFont"
+    },
+    "MENU": {
+      "ThemeConfig": "Standarddesign und Standardschriftarten für alle neuen Journale festlegen",
+      "OpenDialog": "Dialogfeld „Designauswahl“ öffnen",
+      "ThemeConfigHint": "Diese Einstellungen gelten für alle Journale, bei denen die Benutzer das Design nicht geändert haben..",
+      "addOwnFonts": "Füge deine Schriftarten hinzu",
+      "OpenFontDialog": "Dialogfeld „Schriftart hinzufügen“ öffnen",
+      "ownFontsHint": "Du kannst deine eigenen Schriftarten aus Google Fonts oder lokalen Dateien hinzufügen.."
+    },
+    "OWNFONT": {
+      "addedFonts": "Hier kannst du deine eigenen Schriftarten laden, entweder von lokalen Dateien oder von Google Fonts..",
+      "remove": "Schriftart löschen",
+      "noFonts": "Keine Schriftarten hinzugefügt",
+      "addGoogleFont": "Schriftarten von Google Fonts hinzufügen",
+      "googleName": "Schriftartname",
+      "googleUrl": "Schriftart-URL",
+      "add": "Feld hinzufügen",
+      "addLocalFont": "Lokale Schriftart hinzufügen",
+      "localName": "Schriftart-Name",
+      "localPath": "Pfad zur Schriftartdatei",
+      "save": "Speichern und Schriftarten hinzufügen",
+      "title": "Füge deine eigenen Schriftarten hinzu"
+    },
+    "WARNING": {
+      "errorOnFontLoading": "Fehler beim Laden der Schriftart: {font}"
+    }
+  }
+}
