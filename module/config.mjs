@@ -12,6 +12,7 @@ JT.sheetTheme = {
   cosmicblue: "JT.THEME.cosmicblue",
   starburst: "JT.THEME.starburst",
   matrixblack: "JT.THEME.matrixblack",
+  highcontrast: "JT.THEME.highconstrast"
 };
 
 JT.JournalHeaderFont = {

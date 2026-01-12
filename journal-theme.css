@@ -1523,3 +1523,118 @@
 .file-picker {
   display: flex;
 }
+/* =========================
+   HIGH CONTRAST THEME
+   ========================= */
+
+.application.sheet.journal-sheet.journal-entry.highcontrast {
+  background: #000;
+}
+
+/* Window title */
+.journal-entry.highcontrast header.window-header .window-title {
+  font-family: "Bruno Ace SC";
+  font-size: 1.25rem;
+  margin: 0;
+  line-height: 1;
+  color: #fff;
+}
+
+/* Text inputs */
+.journal-entry.highcontrast input[type="text"] {
+  color: #fff;
+  background: #000;
+  border: 1px solid #fff;
+}
+
+/* Journal title input */
+.journal-entry.highcontrast .journal-header .title {
+  background: #000;
+  color: #fff;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  margin: 5px;
+  font-family: "Bruno Ace SC";
+}
+
+/* Sidebar */
+.journal-entry.highcontrast .journal-sidebar {
+  background: #000;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+/* Content area */
+.journal-entry.highcontrast .journal-entry-content {
+  background: #000;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+/* Page container */
+.journal-entry.highcontrast .journal-entry-pages {
+  background: #000;
+  color: #fff;
+  font-family: "Quantico";
+}
+
+/* Headers inside content */
+.journal-entry.highcontrast .journal-entry-page .journal-page-content h1,
+.journal-entry.highcontrast .journal-entry-page .journal-page-content h2,
+.journal-entry.highcontrast .journal-entry-page .journal-page-content h3,
+.journal-entry.highcontrast .journal-entry-page .journal-page-content h4,
+.journal-entry.highcontrast .journal-entry-page .journal-page-content h5,
+.journal-entry.highcontrast .journal-entry-page .journal-page-content h6,
+.journal-entry.highcontrast .journal-page-header {
+  --headerFont: "Bruno Ace SC";
+  --font-h1: var(--headerFont);
+  --font-h2: var(--headerFont);
+  --font-h3: var(--headerFont);
+  --font-h4: var(--headerFont);
+  --font-h5: var(--headerFont);
+  --font-h6: var(--headerFont);
+
+  color: #fff;
+}
+
+/* Sidebar TOC headings */
+.journal-entry.highcontrast .journal-sidebar .toc .page-heading,
+.journal-entry.highcontrast .journal-sidebar .toc .h1 .heading-link,
+.journal-entry.highcontrast .journal-sidebar .toc .h2 .heading-link,
+.journal-entry.highcontrast .journal-sidebar .toc .h3 .heading-link {
+  font-family: "Bruno Ace SC", sans-serif;
+  color: #fff;
+}
+
+/* Links and inline rolls */
+.journal-entry.highcontrast .content-link,
+.journal-entry.highcontrast .inline-roll {
+  color: #fff;
+}
+
+/* Window header icons */
+.journal-entry.highcontrast header.window-header .header-control {
+  color: #fff;
+}
+
+/* Expanded variant */
+.application.sheet.journal-sheet.journal-entry.highcontrast.expanded {
+  box-shadow: none;
+}
+
+/* Responsive behavior */
+@media (max-width: 1100px) {
+  .application.sheet.journal-sheet.journal-entry.highcontrast {
+    width: 95%;
+    left: 2.5%;
+    top: 40px;
+    height: auto;
+    max-height: calc(100vh - 80px);
+  }
+}
+
+/* File picker */
+.file-picker {
+  display: flex;
+}

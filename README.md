@@ -3,7 +3,7 @@
 # Journal Styler
 
 Created in collaboration with **Immersive Realms**  
-**Code:** BartekB | **UI and Journal Themes:** DeviousHearts  
+**Code:** BartekB | **UI and Journal Themes:** DeviousHearts
 
 ---
 
@@ -24,17 +24,20 @@ Clicking this button opens a **style selection dialog**, where you can configure
 
 <img src="Redme screen shot/Dialog.png">
 
-### 1. Theme  
+### 1. Theme
+
 Themes define the **background image**, and default **header** and **body fonts** for the journal text.  
 You can choose from **10 predefined themes**:
 
 <img src="Redme screen shot/themes.png">
 
-### 2. Header Font  
+### 2. Header Font
+
 Overrides the theme’s default header font for all heading elements in the journal.
 
-### 3. Body Font  
-Changes the default font for all non-header text in the journal.  
+### 3. Body Font
+
+Changes the default font for all non-header text in the journal.
 
 > These settings **do not override** fonts manually applied during text editing — your inline styles remain unchanged.
 
@@ -74,8 +77,8 @@ The module enhances the default Foundry text editor:
 
 <img src="Redme screen shot/texteditor.png">
 
-- The header selector is now separated into its own dropdown.  
-- Bold, italic, and underline buttons have been reorganized for easier access.  
+- The header selector is now separated into its own dropdown.
+- Bold, italic, and underline buttons have been reorganized for easier access.
 - A **font size selector** has been added, offering quick size adjustments:
 
 <img src="Redme screen shot/font size.png">
