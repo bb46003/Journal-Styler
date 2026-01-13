@@ -1,4 +1,10 @@
+
+# Version 1.2
+Add German translation (thanks to @KarstenW76)
+Add high-contrast theme – makes all journal backgrounds black and all text white
+
+
 # Version 1.1
 Improve loading time of added fonts
 Refactor code for more roboust aproach using DataFields in settings
-Add Pilish Translation
+Add Polish Translation
