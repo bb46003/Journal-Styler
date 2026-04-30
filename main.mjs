@@ -4,6 +4,7 @@ import { SocketHandler } from "./module/socketHandler.mjs";
 import FontSize from "./module/font-size.mjs";
 import { OwnFontsDialog } from "./module/own-fonts-dialog.mjs";
 import addFonts from "./module/adding-font.mjs";
+import { FontChange } from "./module/menu.mjs"
 
 Hooks.once("init", async function () {
   CONFIG.JT = JT;
@@ -72,8 +73,20 @@ Hooks.once("init", async function () {
 
 Hooks.once("ready", async function () {
   await addFonts();
-});
 
+  const proto = foundry.prosemirror.ProseMirrorMenu.prototype;
+  const originalRender = proto.render;
+
+  const fontChange = new FontChange(); // ✅ instancja
+
+  proto.render = function (...args) {
+    const result = originalRender.apply(this, args);
+
+    fontChange.attach(this); // ✅ przekazujesz menu instance
+
+    return result;
+  };
+});
 Hooks.on("renderJournalEntrySheet", (html) => {
   let element;
   let uuid;
@@ -164,14 +177,6 @@ function registerHandlebarsHelpers() {
     console.log(value);
   });
 }
-
-Hooks.on("createProseMirrorEditor", (_uuid, plugins, _options) => {
-  console.log(plugins);
-  const Menu = FontSize.prosemirror.FontSizeProseMirrorMenu;
-  const { defaultSchema } = foundry.prosemirror;
-  const options = plugins.menu.options;
-  plugins.menu = Menu.build(defaultSchema, options);
-});
 
 Hooks.on("getProseMirrorMenuDropDowns", (_app, dropdowns) => {
   const dropdownArray = Array.isArray(dropdowns) ? dropdowns : Object.values(dropdowns);

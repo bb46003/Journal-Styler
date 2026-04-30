@@ -1,4 +1,4 @@
-import { FontSizeProseMirrorMenu } from "./menu.mjs";
+import { FontChange } from "./menu.mjs";
 
 export default class FontSize {
   static SCOPES = foundry.prosemirror.ProseMirrorMenu._MENU_ITEM_SCOPES;
@@ -9,7 +9,7 @@ export default class FontSize {
     if (!module.FontSize) module.FontSize = new FontSize();
     return module.FontSize;
   }
-  static prosemirror = { FontSizeProseMirrorMenu };
+
   static createItems(menu) {
     const li = document.createElement("li");
     li.classList.add(FontSize.SCOPES.TEXT);
